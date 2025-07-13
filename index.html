@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Venkatesan| Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <button id="toggle-theme">🌙 Dark Mode</button>
+    <img src="Venkzz.jpg" alt="Venkatesan" class="profile-pic">
+    <h1>Hello, I'm Venkatesan 👋</h1>
+    <p>Embedded Systems | IoT | C | Python Enthusiasist<p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I build smart embedded solutions using C, Python, and microcontrollers. Passionate about solving real-world problems with IoT.</p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>1. Fire Detection and Extinguishing Robot</strong>- A robotic system designed to detect and suppress fire hazards automatically using sensors.</li>
+      <li><strong>2. Offline Money Transaction System Through MANET</strong>- Developed a mobile ad-hoc network (MANET)-based system to enable peer-to-peer.</li>
+      <li><strong>3. AI-based Plant Disease Detection</strong>- Used artificial intelligence to detect plant diseases from leaf images to assist farmers.
+ </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <p>C, Python, Embedded C, MATLAB, TMS320C54xx, IoT, PCB Design</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: dranzervenki63@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/DranzerVenki">github.com/yourusername</a></p>
+    <p><a href="VenkatesanG_Classic_Resume_Clickable.pdf" target="_blank">Download Resume (PDF)</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Venkatesan</p>
+  </footer>
+  <script>
+  const toggle = document.getElementById('toggle-theme');
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    toggle.textContent = document.body.classList.contains('dark') ? '☀️ Light Mode' : '🌙 Dark Mode';
+  });
+</script>
+
+</body>
+</html>
