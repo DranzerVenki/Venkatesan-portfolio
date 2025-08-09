@@ -3,54 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Venkatesan| Portfolio</title>
+  <title>Venkatesan | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- ===== HEADER ===== -->
   <header>
     <button id="toggle-theme">🌙 Dark Mode</button>
-    <img src="Venkzz.jpg" alt="Venkatesan" class="profile-pic">
+    <img src="Venkzz.jpg" alt="Venkatesan's profile photo" class="profile-pic">
     <h1>Hello, I'm Venkatesan 👋</h1>
-    <p>Embedded Systems | IoT | C | Python Enthusiasist<p>
+    <p>Embedded Systems | IoT | C/C++ | Python | AI/ML Enthusiast</p>
   </header>
 
+  <!-- ===== ABOUT ME ===== -->
   <section>
     <h2>About Me</h2>
-    <p>I build smart embedded solutions using C, Python, and microcontrollers. Passionate about solving real-world problems with IoT.</p>
+    <p>Final year B.E. ECE student with practical experience in Embedded Systems, IoT, and AI/ML. Proficient in C/C++, Python, and Java. Skilled in hardware interfacing, data analytics, and real-time system programming. Passionate about designing innovative technology-driven solutions.</p>
   </section>
 
+  <!-- ===== PROJECTS ===== -->
   <section>
     <h2>Projects</h2>
-    <ul>
-      <li><strong>1. Fire Detection and Extinguishing Robot</strong>- A robotic system designed to detect and suppress fire hazards automatically using sensors.</li>
-      <li><strong>2. Offline Money Transaction System Through MANET</strong>- Developed a mobile ad-hoc network (MANET)-based system to enable peer-to-peer.</li>
-      <li><strong>3. AI-based Plant Disease Detection</strong>- Used artificial intelligence to detect plant diseases from leaf images to assist farmers.
- </li>
-    </ul>
+
+    <div class="project">
+      <strong>1. Fire Detection and Extinguishing Robot</strong> – A robotic system designed to detect and suppress fire hazards automatically using flame sensors. 
+      <br><em>Tech: Arduino, Flame Sensor, Motor Driver</em>
+    </div>
+
+    <div class="project">
+      <strong>2. Offline Money Transaction System Through MANET</strong> – Developed a mobile ad-hoc network (MANET)-based system to enable peer-to-peer money transactions.
+      <br><em>Tech: C++, Socket Programming</em>
+    </div>
+
+    <div class="project">
+      <strong>3. AI-based Plant Disease Detection</strong> – Used a Convolutional Neural Network (CNN) to detect plant diseases from leaf images to assist farmers.
+      <br><em>Tech: Python, TensorFlow, OpenCV</em>
+    </div>
   </section>
 
+  <!-- ===== SKILLS ===== -->
   <section>
     <h2>Skills</h2>
-    <p>C, Python, Embedded C, MATLAB, TMS320C54xx, IoT, PCB Design</p>
+    <div class="skills">
+      <span class="skill-badge">C/C++</span>
+      <span class="skill-badge">Python</span>
+      <span class="skill-badge">Embedded Systems</span>
+      <span class="skill-badge">IoT</span>
+      <span class="skill-badge">AI/ML</span>
+      <span class="skill-badge">Java</span>
+    </div>
   </section>
 
-  <section>
+  <!-- ===== CONTACT ===== -->
+  <section class="contact">
     <h2>Contact</h2>
-    <p>Email: dranzervenki63@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/DranzerVenki">github.com/yourusername</a></p>
-    <p><a href="VenkatesanG_Classic_Resume_Clickable.pdf" target="_blank">Download Resume (PDF)</a></p>
+    <p>Email: <a href="mailto:dranzervenki63@gmail.com">dranzervenki63@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/DranzerVenki" target="_blank">github.com/DranzerVenki</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/venkatesan-g-04530b21a/" target="_blank">linkedin.com/in/venkatesan-g</a></p>
+    <p><a href="Venkatesan_G_Resume(ECE)Updated.pdf.pdf" target="_blank">📄 Download Resume (PDF)</a></p>
   </section>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
     <p>© 2025 Venkatesan</p>
   </footer>
-  <script>
-  const toggle = document.getElementById('toggle-theme');
-  toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-    toggle.textContent = document.body.classList.contains('dark') ? '☀️ Light Mode' : '🌙 Dark Mode';
-  });
-</script>
 
+  <!-- ===== SCRIPT ===== -->
+  <script>
+    const toggle = document.getElementById('toggle-theme');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') 
+        ? '☀️ Light Mode' 
+        : '🌙 Dark Mode';
+    });
+  </script>
 </body>
 </html>
